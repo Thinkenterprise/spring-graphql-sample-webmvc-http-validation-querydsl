@@ -17,14 +17,12 @@
 package io.spring.sample.graphql.repository;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.graphql.boot.test.tester.AutoConfigureWebGraphQlTester;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.graphql.test.tester.WebGraphQlTester;
 
-@SpringBootTest
-@AutoConfigureWebGraphQlTester
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 class ArtifactRepositoriesTests {
 
 	@Autowired

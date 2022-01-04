@@ -16,7 +16,7 @@ public class GraphQLConfiguration implements RuntimeWiringConfigurer {
     public void configure(Builder builder) {
 
         
-
+/*
         ValidationRules validationRules = ValidationRules.newValidationRules()
                                                          .onValidationErrorStrategy(OnValidationErrorStrategy.RETURN_NULL)
                                                         .build();
@@ -26,6 +26,7 @@ public class GraphQLConfiguration implements RuntimeWiringConfigurer {
 
         builder.scalar(ExtendedScalars.Date); 
         builder.directiveWiring(validationSchemaWiring);
+        */
         
         
     }
